@@ -1,0 +1,38 @@
+body{
+    background-color: aliceblue;
+}
+h1
+{
+    font-family: "Lucida Handwriting";
+    font-size: 70px;
+
+}
+.cl{
+    font-size: 30px;
+    font-family: "Lucida Handwriting";
+}
+.add{
+    font-size: 50px;
+
+}
+.button1
+{
+    background-color: lavenderblush;
+    font-size: 25px;
+    border: 2px solid black;
+  border-radius: 4px;
+}
+.button2
+{
+    background-color: lavenderblush;
+    font-size: 25px;
+    border: 2px solid black;
+  border-radius: 4px;
+}
+.in1{
+    width: 300px;
+    background-color: aliceblue;
+    border: none;
+  border-bottom: 3px solid black;
+font-size: 20px;
+}

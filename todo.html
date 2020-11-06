@@ -1,0 +1,34 @@
+{% load static %}
+
+<html>
+
+<head>
+    <title>
+        Todo App!
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<center>
+    <h1>Your Simple Todo List!!</h1>
+
+    <ul class="cl">
+        {% for todo_item in all_items %}
+        <li>{{ todo_item.content }}
+        <form action="/deleteTodo/{{ todo_item.id }}/"
+              style="display: inline;"
+              method="post">{% csrf_token %}
+        <input type="submit" value="Delete" class="button2"/>
+    </form>
+        </li>
+        {% endfor %}
+    </ul>
+<div class="add">
+    <form action="/addTodo/" method="post">{% csrf_token %}
+        <input type="text" name="content" placeholder="Add your task..." class="in1"/>
+        <input type="submit" value="Add" class="button1"/>
+    </form>
+</div>
+</center>
+</body>
+</html>
